@@ -1,24 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Heart Prediction Result</title>
-    
+    <link rel="stylesheet" href="../static/styles.css">
 </head>
+
 <body>
-    <div class="container">
-        <h1>Heart Disease Prediction Result</h1>
-        
-        <div class="results">
-			{% if prediction==1 %}
-				<h1>Prediction: <span class='danger'>Oops! You have Chances of Heart Disease.</span></h1>
-				
-			{% elif prediction==0 %}
-				<h1>Prediction: <span class='safe'>Great! You DON'T chances have Heart Disease.</span></h1>
-				
-			{% endif %}
-		</div>
+    <header>
+        <h1>Heart Disease Prediction</h1>
+    </header>
+
+    <div class="wrapper">
+        <div class="container">
+            <!-- Heart Icon -->
+            <img src="../static/heart3.png" alt="Heartbeat Icon" class="heartbeat-icon">
+
+            <!-- Results Section -->
+            <div class="results">
+                {% if prediction==1 %}
+                    <h2 class="danger">Prediction: Oops! You have chances of Heart Disease.</h2>
+                {% elif prediction==0 %}
+                    <h2 class="safe">Prediction: Great! You DON'T have chances of Heart Disease.</h2>
+                {% endif %}
+            </div>
+        </div>
     </div>
+
+    <footer>
+        <p>&copy; 2025 Heart Prediction System | All Rights Reserved</p>
+    </footer>
 </body>
+
 </html>

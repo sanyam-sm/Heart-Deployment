@@ -1,0 +1,93 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1e1e1e, #252525);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    min-height: 100vh;  /* Ensures full height */
+}
+
+/* HEADER */
+header {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* WRAPPER (Ensures Footer Stays at Bottom) */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    flex-grow: 1; /* Pushes footer to bottom */
+}
+
+/* FORM CONTAINER */
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+/* Heartbeat Icon */
+.heartbeat-icon {
+    width: 150px;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.heartbeat-icon:hover {
+    transform: scale(1.2);
+}
+
+/* Results Box */
+.results {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.danger {
+    color: #ff2e63;
+}
+
+.safe {
+    color: #28a745;
+}
+
+/* FOOTER - Always at Bottom */
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
